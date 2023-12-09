@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../App";
 import Letter from "./Letter";
 
-const Board = () => {
+function Board() {
   return (
     <div className="board">
+      {" "}
       <div className="row">
         <Letter letterPos={0} attemptVal={0} />
         <Letter letterPos={1} attemptVal={0} />
@@ -48,6 +50,6 @@ const Board = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Board;
